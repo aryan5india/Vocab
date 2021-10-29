@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".fragments.AddFragment">
+
+
+    <EditText
+        android:id="@+id/wordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Word"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:background="@drawable/et_bg"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/meaningEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="Meaning"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:background="@drawable/et_bg"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="@id/wordEditText"
+        app:layout_constraintEnd_toEndOf="@id/wordEditText"
+        app:layout_constraintTop_toBottomOf="@id/wordEditText"/>
+
+    <Button
+        android:id="@+id/submitData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:padding="14dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@id/meaningEditText"
+        app:layout_constraintEnd_toEndOf="@id/meaningEditText"
+        app:layout_constraintTop_toBottomOf="@id/meaningEditText"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
